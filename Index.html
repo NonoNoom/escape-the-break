@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Home</title>
+</head>
+<body>
+    <fieldset>
+        <form class="form" action="#">
+            <div class="center">
+                <label>Enter your code</label>
+                <input class="fill-in" type="text" name="password" id="password" placeholder="e.g. 12345678" required/>
+                <div class="error">
+                    <p class="errortext" id="myError">Try again....</clasp>
+                </div>
+                <button class="submit" onclick="onSubmit(event)">SUBMIT</button>
+            </div>    
+        </form>
+    </fieldset>
+
+    <script type="text/javascript">
+        function onSubmit(event) {
+            event.preventDefault();
+            if (document.getElementById('password').value == '566') {
+                window.location.href = '566.html'; 
+            } else if (document.getElementById('password').value != '566') {
+                var error = document.getElementById("myError");
+                error.classList.add("show");
+                document.getElementById('password').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
