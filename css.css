@@ -1,0 +1,79 @@
+.center {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: lightgray;
+    line-height: 1.5;
+}
+
+fieldset {
+    border: 0;
+}
+
+.submit {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0;
+    background-color: gray;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.terug_button {
+    display: block;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.error .errortext {
+    visibility: hidden;
+    color: red;
+}
+
+.error .show {
+    visibility: visible;
+}
+
+.hint-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hint {
+    width: calc(30% - 20px); /* Initially, show 3 images in a row */
+    margin: 5px; /* Adjusted as a percentage of the container width */
+}
+
+@media screen and (max-width: 480px) {
+    .hint {
+        width: calc(45% - 20px); /* Show 2 images in a row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hint {
+        width: calc(90% - 20px); /* Show 1 image per row on smaller screens */
+    }
+}
+
+.homepage {
+    background-image: url(icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
