@@ -23,6 +23,13 @@
     </fieldset>
 
     <script type="text/javascript">
+       if (navigator.userAgent.match(/samsung/i)) {
+           alert("Your browser (Samsung Internet) may not show this website" + 
+                 "correctly. Please consider using a standards-compliant" + 
+                 "browser instead. \n\n" +
+                 "We recommend Firefox, Microsoft Edge, or Google Chrome.");
+       }
+        
         var attempts = 0;
 
         function onSubmit(event) {
